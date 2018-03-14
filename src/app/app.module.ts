@@ -6,31 +6,32 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { SignupPage } from '../pages/signup/signup';
+import { LoginPage } from '../pages/login/login';
+
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { LocalFeedPage } from '../pages/local-feed/local-feed';
 import { PostDetailPage } from '../pages/post-detail/post-detail';
+import { CreatePostPage } from '../pages/create-post/create-post';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { PrivateMsgPage } from '../pages/private-msg/private-msg';
 import { MsgDetailPage } from '../pages/msg-detail/msg-detail';
-
-import { SignupPage } from '../pages/signup/signup';
-import { LoginPage } from '../pages/login/login';
-
-import { SettingsPage } from '../pages/settings/settings';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    LocalFeedPage,
-    PostDetailPage,
-    PrivateMsgPage,
-    MsgDetailPage,
     SignupPage,
     LoginPage,
+    TabsPage,
+    LocalFeedPage,
+    PostDetailPage,
     SettingsPage,
-    TabsPage
+    CreatePostPage,
+    PrivateMsgPage,
+    MsgDetailPage
   ],
   imports: [
     BrowserModule,
@@ -39,14 +40,15 @@ import { SettingsPage } from '../pages/settings/settings';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LocalFeedPage,
-    PostDetailPage,
-    PrivateMsgPage,
-    MsgDetailPage,
     SignupPage,
     LoginPage,
+    TabsPage,
+    LocalFeedPage,
+    PostDetailPage,
     SettingsPage,
-    TabsPage
+    CreatePostPage,
+    PrivateMsgPage,
+    MsgDetailPage
   ],
   providers: [
     StatusBar,
