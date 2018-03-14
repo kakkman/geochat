@@ -3,20 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { TabsPage } from '../pages/tabs/tabs';
+
+import { LocalFeedPage } from '../pages/local-feed/local-feed';
+import { PostDetailPage } from '../pages/post-detail/post-detail';
+
+import { PrivateMsgPage } from '../pages/private-msg/private-msg';
+import { MsgDetailPage } from '../pages/msg-detail/msg-detail';
+
+import { SignupPage } from '../pages/signup/signup';
+import { LoginPage } from '../pages/login/login';
+
+import { SettingsPage } from '../pages/settings/settings';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    LocalFeedPage,
+    PostDetailPage,
+    PrivateMsgPage,
+    MsgDetailPage,
+    SignupPage,
+    LoginPage,
+    SettingsPage,
     TabsPage
   ],
   imports: [
@@ -26,9 +39,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    LocalFeedPage,
+    PostDetailPage,
+    PrivateMsgPage,
+    MsgDetailPage,
+    SignupPage,
+    LoginPage,
+    SettingsPage,
     TabsPage
   ],
   providers: [
