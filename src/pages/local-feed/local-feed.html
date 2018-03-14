@@ -1,8 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>LocalFeed</ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only (click) = "goToSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (click) = "createNewPost()">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
+
+
 
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
