@@ -14,5 +14,9 @@
 
 
 <ion-content padding>
+	<ion-input type="text" [(ngModel)]="content" placeholder="Enter Post Title"></ion-input>
+	<button ion-button block type (click)="createPost()" class="btn">
+    	Create a new post
+  	</button>
 
 </ion-content>

@@ -19,6 +19,21 @@ import { SettingsPage } from '../pages/settings/settings';
 import { PrivateMsgPage } from '../pages/private-msg/private-msg';
 import { MsgDetailPage } from '../pages/msg-detail/msg-detail';
 
+import * as firebase from 'firebase';
+import * as geofire from 'geofire';
+import { Geolocation } from '@ionic-native/geolocation';
+import { LocationProvider } from '../providers/location/location';
+
+
+var config = {
+  apiKey: "AIzaSyAMYIKf4nEw7-Nin7sd0ogQQZ_jyZ0aY4k",
+  authDomain: "geochat-5e799.firebaseapp.com",
+  databaseURL: "https://geochat-5e799.firebaseio.com",
+  projectId: "geochat-5e799",
+  storageBucket: "geochat-5e799.appspot.com",
+  messagingSenderId: "676266447750"
+};
+firebase.initializeApp(config);
 
 @NgModule({
   declarations: [
@@ -53,7 +68,9 @@ import { MsgDetailPage } from '../pages/msg-detail/msg-detail';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Geolocation,
+    LocationProvider
   ]
 })
 export class AppModule {}
